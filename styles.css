@@ -122,6 +122,7 @@ nav a {
 }
 
 main {
+    display: flex;
     background-color: #ffffff;
     width: 100%;
     align-content: center;
@@ -138,6 +139,15 @@ footer {
 #auth-options {
     display: flex;
 }
+
+#auth-options button {
+    margin-right: 10px;
+}
+
+#auth-options button:last-child {
+    margin-right: 0;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -264,9 +274,31 @@ button:hover {
     width: 250px;
     background-color: var(--complimentary-color);
     padding: 15px;
-    top: 0;
-    left: 0;
+    position: relative;
+    float: left;
+    background-color: #333333;
+    color: var(--background-color);
 }
+
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#sidebar h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#sidebar a {
+    color: var(--background-color);
+}
+
+#sidebar a:hover {
+    color: var(--highlight-incorrect);
+}
+
 #resultMessage {
     margin-top: 20px;
     font-weight: bold;
@@ -274,7 +306,7 @@ button:hover {
 
 h1 {
     text-align: center;
-    text-size: 2.75rem;
+    font-size: 2.75rem;
 }
 
 .shareBar {
