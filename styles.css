@@ -58,6 +58,10 @@ table {
     --highlight-incorrect:  #F44336;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -206,11 +210,12 @@ img {
 }
 
 .quiz-page {
-    background-image: url(images/snow2.jpeg);
+    background-image: url(images/snow2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
+    flex-grow: 1;
 }
 
 .quiz-question {
