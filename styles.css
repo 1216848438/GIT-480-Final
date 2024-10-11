@@ -1,0 +1,334 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end css reset */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+:root {
+    --background-color: #ffffff;
+    --complimentary-color: #e0e0e0; /*update gray, too light*/
+    --tertiary-color: #000000;
+
+    --text-color: #333333;
+    --primary-font: 'Open Sans', sans-serif;
+    --heading-font: 'Playfair Display', serif;
+    --highlight-correct: #4CAF50;
+    --highlight-incorrect:  #F44336;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--primary-font);
+}
+
+.highlight-correct {
+    background-color: var(--highlight-correct);
+    color: white;
+}
+
+.highlight-incorrect {
+    background-color: var(--highlight-incorrect);
+    color: white;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 40px;
+}
+
+header {
+    background-color: var(--complimentary-color);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+main {
+    background-color: #ffffff;
+    width: 100%;
+    align-content: center;
+}
+
+footer {
+    background-color: var(--complimentary-color);
+    padding: 20px;
+}
+
+.partners-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.partners-section h2 {
+    margin-bottom: 30px;
+}
+
+.partner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--complimentary-color);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.partner img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.partner h3 {
+    margin-bottom: 10px;
+    font-family: var(--heading-font);
+}
+
+.partner p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.partner a {
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.partner a:hover {
+    background-color: #0056b3;
+}
+
+.partner-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.quiz-section {
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-question {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+label:hover {
+    background-color: #f0f0f0;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius:
+    cursor: pointer;
+    transition: background-color 0.3s ease; transition */
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#resultMessage {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.shareBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    background-color: #fefefe;
+    border-left: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.shareBar h3 {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.slider {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.image-slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-slider img {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.arrow {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.dots {
+    display: flex;
+    gap: 5px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+.goals {
+    margin: 40px 20px;
+    text-align: center;
+}
+
+.goals h2 {
+    margin-bottom: 20px;
+}
+
+.goals p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.snow-leopard-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+aside {
+    width: 200px;
+    float: left;
+    padding: 10px;
+}
+
+#topic-content {
+    margin-left: 220px;
+    padding: 10px;
+}
+
+/* resp. layouts */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}

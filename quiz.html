@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snow Leopard Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Snow Leopard Quiz</h1>
+    <div id = "user-info">
+      <span id = "user-points"></span>
+      <button id = "logoutButton">Logout</button>
+      <button id = "loginButton">Login</button>
+      <button id = "signupButton">Sign Up</button>
+    </div>
+  </header>
+  
+  <main>
+    <section class="quiz-section">
+      <h2>Quiz Question:</h2>
+      <p>What is the primary habitat of snow leopards?</p>
+      <form id="quizForm">
+        <label>
+          <input type="radio" name="answer" value="mountains"> Mountains
+        </label><br>
+        <label>
+          <input type="radio" name="answer" value="desert"> Desert
+        </label><br>
+        <label>
+          <input type="radio" name="answer" value="forest"> Forest
+        </label><br>
+        <label>
+          <input type="radio" name="answer" value="grassland"> Grassland
+        </label><br>
+        <button type="button" id="submitQuiz">Submit</button>
+      </form>
+      <div id="resultMessage"></div>
+    </section>
+  </main>
+
+  <div class="shareBar">
+    <h3>Share Your Results</h3>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Share On Facebook">
+            <img src="images/facebook-icon.png" alt="Facebook" />
+        </a>
+        <a href="https://x.com/" target="_blank" aria-label = "Share on X">
+            <img src="images/x-icon.png" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" aria-label = "Share on Instagram">
+            <img src="images/instagram-icon.png" alt="Instagram" />
+        </a>
+        <a href="#" aria-label = "Share Via Messages">
+            <img src="images/message-icon.png" alt="Messages" />
+        </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
