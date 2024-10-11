@@ -85,8 +85,6 @@ body {
     padding: 10px;
 }
 
-
-
 header {
     background-color: var(--complimentary-color);
     padding: 20px 0;
@@ -130,8 +128,12 @@ footer {
     background-color: var(--complimentary-color);
     padding: 20px;
     margin-top: auto;
+    text-align: center;
 }
 
+#auth-options {
+    display: flex;
+}
 img {
     max-width: 100%;
     height: auto;
