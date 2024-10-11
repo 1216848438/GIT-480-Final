@@ -254,6 +254,12 @@ button:hover {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+#main-content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
 #resultMessage {
     margin-top: 20px;
     font-weight: bold;
