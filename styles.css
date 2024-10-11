@@ -95,6 +95,28 @@ header {
     z-index: 100;
 }
 
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--complimentary-color);
+    padding: 10px 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: var(--tertiary-color);
+}
+
 main {
     background-color: #ffffff;
     width: 100%;
@@ -105,6 +127,7 @@ main {
 footer {
     background-color: var(--complimentary-color);
     padding: 20px;
+    margin-top: auto;
 }
 
 img {
