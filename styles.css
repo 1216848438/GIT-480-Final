@@ -62,6 +62,9 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: var(--primary-font);
+    display: flex;
+    margin: 0;
+    flex-direction: column;
 }
 
 .highlight-correct {
@@ -96,12 +99,12 @@ main {
     background-color: #ffffff;
     width: 100%;
     align-content: center;
+    flex-grow: 1;
 }
 
 footer {
     background-color: var(--complimentary-color);
     padding: 20px;
-    bottom: 0;
 }
 
 img {
