@@ -302,14 +302,15 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin: 20px 0;
 }
 
 .arrow {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 18px;
+    margin: 0 30px;
 }
 
 .dots {
