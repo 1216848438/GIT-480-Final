@@ -293,6 +293,10 @@ button:hover {
     position: relative;
 }
 
+.goals h2 {
+    font-size: 2.5rem;
+}
+
 .image-slider img {
     min-width: 100%;
     transition: transform 0.5s ease;
