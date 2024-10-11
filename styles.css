@@ -260,6 +260,13 @@ button:hover {
     max-width: 800px;
 }
 
+#sidebar {
+    width: 250px;
+    background-color: var(--complimentary-color);
+    padding: 15px;
+    top: 0;
+    left: 0;
+}
 #resultMessage {
     margin-top: 20px;
     font-weight: bold;
