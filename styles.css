@@ -247,6 +247,10 @@ button:hover {
     font-weight: bold;
 }
 
+h1 {
+    text-align: center;
+}
+
 .shareBar {
     position: fixed;
     top: 0;
