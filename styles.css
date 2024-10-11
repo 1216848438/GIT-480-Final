@@ -135,7 +135,9 @@ footer {
     margin-top: auto;
     text-align: center;
 }
-
+#index {
+    display: block;
+}
 #auth-options {
     display: flex;
 }
